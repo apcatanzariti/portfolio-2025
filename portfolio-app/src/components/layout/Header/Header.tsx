@@ -1,11 +1,11 @@
 import "./header.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Header() {
     return (
         <div className="header-container">
             <div className="logo-title-container">
-                <div className="header-image-container">
+                {/* <div className="header-image-container">
                     <Image
                         src="/header-image.png"
                         alt="Anthony Catanzariti Logo"
@@ -13,14 +13,14 @@ export default function Header() {
                         height={70}
                         style={{  display: "block", margin: "0 auto" }}
                     />
-                </div>
+                </div> */}
                 <p className="title-text">Anthony Catanzariti</p>
             </div>
             <div className="navigation-container">
-                <p>HOME</p>
-                <p>ABOUT</p>
-                <p>PROJECTS</p>
-                <p>CONTACT</p>
+                <p>Home</p>
+                <p><a href="./#about">About</a></p>
+                <p>Projects</p>
+                <p>Contact</p>
             </div>
         </div>
     );
