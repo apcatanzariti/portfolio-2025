@@ -62,7 +62,7 @@ export default function Homepage() {
           <Intro scrollToProjects={scrollToProjects} />
         </section>
         <section id="about" className="about section-padding">
-          <About scrollToContact={scrollToContact} />
+          <About />
         </section>
         <section id="projects" className="section-padding">
           <Projects />
