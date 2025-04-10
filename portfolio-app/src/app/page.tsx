@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
-import Header from "..//components/layout/Header/Header";
+import Header from "../components/layout/Header/Header";
+import Intro from "../components/layout/Intro/Intro";
 import About from "../components/layout/About/About";
 import Projects from "../components/layout/Projects/Projects";
 import Contact from "../components/layout/Contact/Contact";
@@ -11,20 +12,20 @@ export default function Homepage() {
   const [mounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const goToTop = document.getElementById("header");
+    const goToIntro = document.getElementById("intro");
     const goToAbout = document.getElementById("about");
     const goToProjects = document.getElementById("projects");
     const goToContact = document.getElementById("contact");
 
-    if (goToTop && goToAbout && goToProjects && goToContact) {
+    if (goToIntro && goToAbout && goToProjects && goToContact) {
       setIsMounted(true);
     };
   }, []);
 
-  function scrollToTop() {
+  function scrollToIntro() {
     if (mounted) {
-      const goToTop = document.getElementById("header");
-      goToTop?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const goToIntro = document.getElementById("intro");
+      goToIntro?.scrollIntoView({ behavior: "smooth", block: "start" });
     };
   };
 
@@ -53,12 +54,15 @@ export default function Homepage() {
     <div>
       <header>
         <section id="header">
-          <Header scrollToTop={scrollToTop} scrollToAbout={scrollToAbout} scrollToProjects={scrollToProjects} scrollToContact={scrollToContact} />
+          <Header scrollToIntro={scrollToIntro} scrollToAbout={scrollToAbout} scrollToProjects={scrollToProjects} scrollToContact={scrollToContact} />
         </section>
       </header>
       <main>
-        <section id="about" className="section-padding">
-          <About />
+        <section id="intro">
+          <Intro scrollToProjects={scrollToProjects} />
+        </section>
+        <section id="about" className="about section-padding">
+          <About scrollToContact={scrollToContact} />
         </section>
         <section id="projects" className="section-padding">
           <Projects />

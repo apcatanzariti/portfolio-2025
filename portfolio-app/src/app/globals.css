@@ -54,5 +54,9 @@ a {
 }
 
 .section-padding {
-  padding: 12rem;
+  padding: 8rem 0px;
+}
+
+.about {
+  background-color: #FAFAFA;
 }

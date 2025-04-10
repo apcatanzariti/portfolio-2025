@@ -1,9 +1,17 @@
 import "./about.css";
 
-export default function About() {
+interface AboutProps {
+    scrollToContact: () => void;
+};
+
+export default function About({ scrollToContact }: AboutProps) {
     return (
         <div className="about-container">
-            <p>This is the about portion of the website.</p>
+            <div className="about-text">
+                <h1>Hey, I&apos;m Anthony</h1>
+                <p>Full Stack Developer building websites and web applications for a variety of different industries, focusing on incredible UI/UX and efficient back end code</p>
+                <button className="about-button" onClick={scrollToContact}>Contact</button>
+            </div>
         </div>
     );
 };
