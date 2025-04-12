@@ -2,13 +2,13 @@ import "./header.css";
 // import Image from "next/image";
 
 interface HeaderProps {
-    scrollToTop: () => void;
+    scrollToIntro: () => void;
     scrollToAbout: () => void;
     scrollToProjects: () => void;
     scrollToContact: () => void;
 };
 
-export default function Header({ scrollToTop, scrollToAbout, scrollToProjects, scrollToContact }: HeaderProps) {
+export default function Header({ scrollToIntro, scrollToAbout, scrollToProjects, scrollToContact }: HeaderProps) {
     return (
         <div className="header">
             <div className="header-container">
@@ -25,7 +25,7 @@ export default function Header({ scrollToTop, scrollToAbout, scrollToProjects, s
                     <p className="title-text">Anthony Catanzariti</p>
                 </div>
                 <div className="navigation-container">
-                    <p onClick={scrollToTop}>Home</p>
+                    <p onClick={scrollToIntro}>Intro</p>
                     <p onClick={scrollToAbout}>About</p>
                     <p onClick={scrollToProjects}>Projects</p>
                     <p onClick={scrollToContact}>Contact</p>
