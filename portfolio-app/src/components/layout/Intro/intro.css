@@ -1,10 +1,21 @@
 .intro-container {
     /* border: solid 1px blue; */
     height: 100vh;
+    min-height: 50rem;
+    max-height: 120rem;
     position: relative;
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url("../../../../public/pattern.svg");
     background-position: center center;
     font-weight: 400;
+}
+
+.intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    max-width: 90rem;
 }
 
 .intro-text {
