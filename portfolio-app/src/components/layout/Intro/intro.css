@@ -34,24 +34,5 @@
     margin: 0 auto;
     padding: 0;
     margin-top: 2rem;
-}
-
-.intro-button {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.543);
-    background-color: #005eb1;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 1rem 4.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    border: none;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    margin-top: 4rem;
-}
-
-.intro-button:hover {
-    transform: translateY(-3px);
+    margin-bottom: 4rem;
 }

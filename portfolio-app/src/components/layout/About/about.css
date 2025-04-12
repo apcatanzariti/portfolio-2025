@@ -1,6 +1,6 @@
 .about-container {
     margin: auto;
-    width: 92%;
+    width: 78%;
 }
 
 .about-title p {
@@ -34,11 +34,11 @@
 }
 
 .about-content {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    margin-top: 5rem;
+    gap: 8rem;
+    margin-top: 5.5rem;
 }
 
 .about-content-title {
@@ -46,4 +46,31 @@
     font-weight: 700;
     color: #111111;
     margin-bottom: 2rem;
+}
+
+.about-content-text {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.last-para {
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background: #E7E7E7;
+    color: #666666;
+    font-weight: 600;
 }
