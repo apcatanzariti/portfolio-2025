@@ -1,38 +1,28 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
+import SmallButton from "../../ui/small-button/SmallButton";
 import Image from "next/image";
 
 interface ImageCarouselProps {
     sources: string[];
+    displayImage: string;
 };
 
-const style: React.CSSProperties = {
-    position: "relative",
-    cursor: "pointer",
-    boxShadow: "0 5px 15px 0 rgba(0, 0, 0, 0.543)",
-    borderRadius: "5px",
-    width: "40rem",
-    height: "20rem",
-    overflow: "hidden"
-};
-
-function ImageCarousel({ sources }: ImageCarouselProps) {
+function ImageCarousel({ sources, displayImage }: ImageCarouselProps) {
 	const [toggler, setToggler] = useState(false);
 
 	return (
 		<div>
-            <div style={style}>
+            <div style={{ textAlign: "left" }}>
                 <Image
-                    onClick={() => setToggler(!toggler)}
-                    src="/Entergy-1.png"
+                    src={displayImage}
                     alt="Image of webpage"
                     layout="responsive"
-                    // width={0}
-                    // height={0}
                     width={600}
                     height={300}
-                    // fill={true}
+                    style={{ borderRadius: "5px", boxShadow: "0 5px 15px 0 rgba(0, 0, 0, 0.543)" }}
                 />
+                <SmallButton onClick={() => setToggler(!toggler)} buttonText="See More Images" />
             </div>
 			 <FsLightbox
 				toggler={toggler}

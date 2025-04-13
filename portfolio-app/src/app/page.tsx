@@ -67,7 +67,7 @@ export default function Homepage() {
         <section id="projects" className="projects section-padding">
           <Projects />
         </section>
-        <section id="contact" className="section-padding">
+        <section id="contact" className="contact section-padding">
           <Contact />
         </section>
       </main>
