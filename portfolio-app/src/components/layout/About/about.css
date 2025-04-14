@@ -1,6 +1,7 @@
 .about-container {
     margin: auto;
     width: 78%;
+    position: relative;
 }
 
 .about-title p {
@@ -34,7 +35,6 @@
 }
 
 .about-content {
-    /* border: solid 1px red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8rem;

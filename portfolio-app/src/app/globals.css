@@ -54,7 +54,7 @@ a {
 }
 
 .section-padding {
-  padding: 8rem 0px;
+  padding: 6rem 0px;
 }
 
 .about {
@@ -63,4 +63,10 @@ a {
 
 .projects {
   background-color: #FEFEFE;
+}
+
+.contact {
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center, url("../../public/pattern.svg");
+  background-position: center;
+  background-size: cover;
 }

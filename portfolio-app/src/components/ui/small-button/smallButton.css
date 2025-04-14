@@ -1,19 +1,20 @@
-.button {
+.small-button {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.543);
     background-color: #005eb1;
-    color: #ffffff;
     font-family: "source-sans-pro", sans-serif;
+    color: #ffffff;
     font-weight: bold;
     letter-spacing: .5px;
-    padding: 1rem 3rem;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
     border: none;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.button:hover {
+.small-button:hover {
     transform: translateY(-3px);
 }

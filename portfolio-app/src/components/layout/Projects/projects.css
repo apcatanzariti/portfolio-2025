@@ -1,6 +1,7 @@
 .projects-container {
     margin: auto;
     width: 78%;
+    position: relative;
 }
 
 .projects-title p {
@@ -29,7 +30,7 @@
     width: 60%;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #555555;
+    color: #444444;
     margin-top: 3rem;
 }
 
@@ -38,4 +39,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 8rem;
     margin-top: 5.5rem;
+    align-items: center;
+}
+
+.projects-content-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 2rem;
+}
+
+.projects-content-text {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
 }
