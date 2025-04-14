@@ -1,3 +1,37 @@
 .footer-container {
-    border: solid 1px green;
+    background: #000000;
+    padding: 3rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.small-footer-text {
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+    color: #ffffff;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

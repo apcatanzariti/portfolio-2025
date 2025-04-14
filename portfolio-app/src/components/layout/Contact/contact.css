@@ -65,3 +65,24 @@
     background: #F2F2F2;
     outline: none;
 }
+
+.email-button {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.543);
+    background-color: #005eb1;
+    font-family: "source-sans-pro", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    transform: translateY(-3px);
+}
